@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Веб-студия</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-code"></i> WebStudio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#services">Услуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">Наши проекты</h1>
+        <p class="text-center mb-5">Примеры работ, которыми мы гордимся</p>
+        <div class="row g-4" id="portfolioGrid">
+            <!-- Карточка проекта 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project1.jpg" class="card-img-top" alt="Проект 1" onerror="this.src='https://placehold.co/600x400?text=Сайт+фитнес-клуба'">
+                    <div class="card-body">
+                        <h5 class="card-title">Фитнес-клуб "Energy"</h5>
+                        <p class="card-text">Современный сайт с расписанием тренировок, онлайн-записью и блогом.</p>
+                        <span class="badge bg-primary">Сайт под ключ</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project2.jpg" class="card-img-top" alt="Проект 2" onerror="this.src='https://placehold.co/600x400?text=Интернет-магазин'">
+                    <div class="card-body">
+                        <h5 class="card-title">Магазин цветов "Бутон"</h5>
+                        <p class="card-text">Интернет-магазин с корзиной, фильтрами и интеграцией оплаты.</p>
+                        <span class="badge bg-success">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project3.jpg" class="card-img-top" alt="Проект 3" onerror="this.src='https://placehold.co/600x400?text=Портал+недвижимости'">
+                    <div class="card-body">
+                        <h5 class="card-title">Агентство недвижимости</h5>
+                        <p class="card-text">Каталог объектов, карта, форма заявки и личный кабинет.</p>
+                        <span class="badge bg-info text-dark">Портал</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 4 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project4.jpg" class="card-img-top" alt="Проект 4" onerror="this.src='https://placehold.co/600x400?text=Лендинг'">
+                    <div class="card-body">
+                        <h5 class="card-title">Образовательный курс</h5>
+                        <p class="card-text">Продающий лендинг с видео, таймером и формой захвата.</p>
+                        <span class="badge bg-warning">Лендинг</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project5.jpg" class="card-img-top" alt="Проект 5" onerror="this.src='https://placehold.co/600x400?text=Корпоративный+сайт'">
+                    <div class="card-body">
+                        <h5 class="card-title">Юридическая фирма</h5>
+                        <p class="card-text">Корпоративный сайт с командой, услугами и формой обратной связи.</p>
+                        <span class="badge bg-secondary">Корпоративный</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка проекта 6 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/project6.jpg" class="card-img-top" alt="Проект 6" onerror="this.src='https://placehold.co/600x400?text=Блог'">
+                    <div class="card-body">
+                        <h5 class="card-title">Блог о путешествиях</h5>
+                        <p class="card-text">Динамичный блог с категориями, поиском и адаптивным дизайном.</p>
+                        <span class="badge bg-danger">Блог</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white pt-4 pb-3">
+    <div class="container text-center">
+        <p>© 2026 WebStudio — создание сайтов под ключ</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

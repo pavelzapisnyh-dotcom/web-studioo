@@ -1,0 +1,78 @@
+/* ОБЩИЕ СТИЛИ */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+/* ГЛАВНЫЙ БАННЕР */
+.hero {
+    background: linear-gradient(135deg, #1e2a3a, #0f172a);
+    min-height: 70vh;
+    background-size: cover;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* КАРТОЧКИ УСЛУГ */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* КНОПКИ */
+.btn-primary {
+    background-color: #3b82f6;
+    border: none;
+    padding: 10px 24px;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+
+/* ФУТЕР */
+footer a {
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+    color: #3b82f6 !important;
+}
+
+/* ФОРМА */
+.form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.2rem rgba(59,130,246,0.25);
+}
+
+/* АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+}
